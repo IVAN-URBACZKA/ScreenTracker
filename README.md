@@ -1,5 +1,8 @@
 # ScreenTracker
 
+![Logo](https://github.com/IVAN-URBACZKA/ScreenTracker/blob/main/logo.png "LOGO")
+
+
 ## ScreenTracker est conçu pour offrir une expérience utilisateur riche et intuitive pour les amateurs de séries TV et de films. Voici les fonctionnalités clés à inclure dans l'application :
 
 # Fonctionnalités Clés de ScreenTracker
