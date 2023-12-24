@@ -13,9 +13,10 @@ const MovieCard = ({ id, title, description, imageUrl }) => { // Ajouter id dans
         <div className="movie-card">
             <Link to={`/movie/${id}`}> {/* Utiliser l'id ici */}
                 <img src={imageUrl} alt={title} className="movie-image" />
-                <h3>{title}</h3>
+                
             </Link>
             <div className="movie-info">
+              <h3>{title}</h3>
                 <p>{description}</p>
                 <button className="favorite-btn" onClick={toggleFavorite}>
                     {isFavorite ? '❤️' : '🤍'}

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
+import '../assets/css/MovieList.css'; 
+
 
 const MoviesList = () => {
     const [movies, setMovies] = useState([]);

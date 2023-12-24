@@ -1,32 +1,45 @@
+/* MovieCard.css */
 .movie-card {
-    background-color: #141414;
-    color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    margin: 20px;
+    background-color: #141414; /* Dark background, typical for Netflix */
+    color: #ffffff; /* White text for contrast */
+    border: 2px solid #E50914; /* Netflix's iconic red as border */
+    border-radius: 8px; /* Slightly rounded corners */
+    padding: 20px;
+    max-width: 300px; /* Adjust as needed */
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out;
 }
 
-.movie-image {
-    width: 100%;
-    object-fit: cover;
+.movie-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
-.movie-info {
-    padding: 15px;
+.movie-card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 2px solid #E50914; /* Red underline for image */
 }
 
-.movie-info h3 {
-    margin-top: 0;
+.movie-card p {
+    font-family: Arial, sans-serif;
+    font-size: 14px; /* Smaller font size for description */
+    line-height: 1.6; /* Improved readability */
 }
 
-.favorite-btn {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 24px;
+.movie-card h3 {
+    font-family: 'Netflix Sans', Arial, sans-serif; /* Utiliser Netflix Sans si disponible */
+    font-size: 24px; /* Taille de police augmentée */
+    font-weight: bold; /* Police audacieuse */
+    letter-spacing: 0.5px; /* Espacement des lettres */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre de texte pour un effet de profondeur */
+    margin-top: 10px;
+    color: white; /* Couleur rouge Netflix pour le titre */
+    transition: border-bottom 0.3s ease-in-out; /* Transition pour l'effet de survol */
+    border-bottom: 3px solid transparent; /* Bordure transparente par défaut */
+    
 }
 
-.favorite-btn:focus {
-    outline: none;
+.movie-card h3:hover {
+    border-bottom: 3px solid #E50914; /* Bordure rouge visible au survol */
 }
