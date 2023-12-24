@@ -1,0 +1,32 @@
+.header {
+    background-color: #141414; /* Couleur de fond typique de Netflix */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    height: 35px;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.navigation li {
+    margin: 0 10px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #e50914; /* Couleur rouge de Netflix pour les survols */
+}

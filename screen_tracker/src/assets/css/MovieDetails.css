@@ -1,0 +1,31 @@
+.movie-details {
+    background-color: #141414;
+    color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.movie-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+.movie-details img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.movie-details strong {
+    color: #e50914; 
+}
