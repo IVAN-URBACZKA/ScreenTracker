@@ -1,31 +1,119 @@
-.movie-details {
+.movie-container {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #fff;
     background-color: #141414;
-    color: white;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-header {
+    width: 100%;
+    padding: 40px 0;
+    margin-bottom: 6%;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), 
+               center/cover no-repeat;
+    background-color: #e50914;
+}
+
+
+.movie-header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: #fff;
+    font-size: 4rem; /* Larger font size */
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ajout d'une ombre portée */
+}
+
+
+.movie-details {
+    width: 100%;
     max-width: 800px;
-    margin: auto;
+    margin-top: -100px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
 }
 
-.movie-details h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    
-}
-
-.movie-details img {
-    max-width: 100%;
+.movie-poster img {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    display: block;
-    margin: 0 auto 20px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
-.movie-details p {
-    font-size: 1.2em;
-    line-height: 1.4;
-    margin-bottom: 10px;
+.movie-info {
+    padding: 15px;
 }
 
-.movie-details strong {
-    color: #e50914; 
+.movie-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.movie-meta span {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.movie-genres span {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 10px 10px 10px 0;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.movie-link, .trailer-button {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.movie-link:hover, .trailer-button:hover {
+    background-color: #1c7430;
+}
+
+@media (max-width: 768px) {
+    .movie-header h1 {
+        font-size: 2rem;
+    }
+
+    .movie-details {
+        margin-top: 0;
+        width: 90%;
+    }
+
+    .movie-meta {
+        flex-direction: column;
+        align-items: center;
+    }
 }
