@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../assets/css/Header.css'; 
 
 const Header = () => {
@@ -10,9 +10,9 @@ const Header = () => {
             </div>
             <nav className="navigation">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li><Link to="/">Accueil</Link></li>
+                <li><Link to="/favorites">Favoris</Link></li>
+                
                 </ul>
             </nav>
         </header>
