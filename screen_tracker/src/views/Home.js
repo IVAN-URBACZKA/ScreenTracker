@@ -1,7 +1,7 @@
 import '../assets/css/Home.css'
 import { Header, Footer, MoviesList } from '../components';
 
-function App() {
+function Home() {
   return (
     <div className="App">
         <Header />
@@ -11,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
